@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" type="text/css"></link>
+</head>
+<body>
+  <h1>Calculator</h1>
+
+  <!--AC = All Clear | CE = Clear Entry -->
+
+  <div id="calculator">
+      <!--using the button class for styling-->
+      <!-- data attributes: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes -->
+      <div id="output" class="button"></div>
+
+      <button id="allClear" class="button" data-action="clear">AC</button>
+      <button id="quotient" class="button operator" data-action="operator">÷</button>
+      
+      <button id="seven" class="button number" data-action="number">7</button>
+      <button id="eight" class="button number" data-action="number">8</button>
+      <button id="nine" class="button number" data-action="number">9</button>
+      <button id="product" class="button operator" data-action="operator">x</button>
+
+      <button id="four" class="button number" data-action="number">4</button>
+      <button id="five" class="button number" data-action="number">5</button>
+      <button id="six" class="button number" data-action="number">6</button>
+      <button id="difference" class="button operator" data-action="operator">-</button>
+
+      <button id="one" class="button number" data-action="number">1</button>
+      <button id="two" class="button number" data-action="number">2</button>
+      <button id="three" class="button number" data-action="number">3</button>
+      <button id="sum" class="button operator" data-action="operator">+</button>
+
+      <button id="zero" class="button number" data-action="number">0</button>
+      <button id="decimal" class="button" data-action="decimal">.</button>
+      <button id="equal" class="button" data-action="equal">=</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
