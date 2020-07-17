@@ -14,13 +14,19 @@ h1 {
 
 
 #calculator {
-  margin: 0 20vw;
+  margin: 0 15vw;
   padding: 3vw;
   border: 3pt solid black;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(6, 10vh);
   border-radius: 5vh;
+}
+
+@media (min-width: 1000px) {
+  #calculator {
+    margin: 0 30vw;
+  }
 }
 
 .button {
